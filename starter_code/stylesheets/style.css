@@ -14,17 +14,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(94, 9, 115);
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .logos {
     background-color: rgb(214, 190, 160);
     color: black;
-    text-transform: uppercase;
 }
 
-.empresas {
-    background-color: white;
-    color: black;
+.logos p{
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slacklogo {
@@ -101,9 +106,114 @@ header {
 .botonEmail button {
     font-size: 16px;
     text-transform: uppercase;
+    width: 400px;
+    height: 50px;
 }
 
 .loginGoogle {
     background-color: rgb(38, 141, 201);
     color: white;
 }
+
+.logos img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.logos-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.empresas {
+    background-color: white;
+    color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+.empresas h3 {
+    color: rgb(94, 9, 115);
+    font-size: 35px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-weight: bold;
+    text-align: center;
+}
+
+.empresas span {
+    color:rgb(94, 9, 115);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.empresas ul {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.empresas ul li{
+    padding: 20px 20px;    
+}
+
+.welcome {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.welcome h3 {
+    font-size: 30px;
+}
+
+.welcome button{
+    width: 200px;
+    height: 50px;
+}
+
+.button1 {
+    background-color: white;
+    color:rgb(94, 9, 115);
+}
+
+.button2 {
+    background-color: rgb(94, 9, 115);
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.blue {
+    color: rgb(0, 140, 255);
+}
+
+footer ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: bold;
+}
+
+.rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.rrss li {
+    padding: 20px;
+}
+
