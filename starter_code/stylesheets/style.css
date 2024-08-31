@@ -10,85 +10,79 @@ footer links grey: #454245
 */
 
 
+/* ======= Body ======= */
+.menu {visibility: hidden;}
+.botones {visibility: hidden;}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(94, 9, 115);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #540B51;
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.logos {
-    background-color: rgb(214, 190, 160);
-    color: black;
+/* ======= Navbar ======= */
+nav {
+    margin-right: 5%;
+    margin-left: 5%;
+    max-height: auto;
+    max-width: auto;
+    background-color: #540B51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.logos p{
-    padding: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+.slacklogo {
+    width: 30%;
+    height: 30%;
+}
+
+
+.menuBuscador img {
+    width: 20px;
+}
+
+.menuBuscador button {
+    background-color: transparent;
+    border:none
+}
+
+.menuBoton {
+    width: 20px;
+}
+
+.menuBoton button {
+    background-color: transparent;
+    border:none;
+}
+
+
+
+
+/* ======= Header ======= */
+header {
+    width: auto;
+    height: auto;
+    background-image: url(../images/background-singup.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slacklogo {
-    width: 100px;
-}
-
-.imagenBuscador img {
-    width: 5px;
-}
-
-.imagenGoogle {
-    width: 17px;
-    background-color: white;
-}
-
-.captura {
-    width: 500px;
-}
-
-/* .logos img {
-    max-width: 200px;
-} */
-
-nav ul li {
-    list-style:none;
-    display: inline;
-}
-
-nav ul a {
-    color: white;
-    text-decoration: none;
-}
-
-nav {
-    background-color: rgb(94, 9, 115);
-    display: flex;
-    flex-direction: row;
-    /* justify-content:space-between; */
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-
-
-header {
-    display: flex;
-    background-image: url(../images/background-singup.png);
-    background-size:cover;
-    flex-direction: row;
-    justify-content: space-between;
+.teamwork {
+    margin: 20px 20px;
+    text-align: center;
 }
 
 .teamwork h1 {
-    font-size: 70px;
-    width: 500px;
+    font-size: 45px;
+    width: auto;
 }
 
 .gratis {
@@ -97,36 +91,68 @@ header {
 
 .botonEmail {
     padding: 20px 10px 20px 10px;
-
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 .botonEmail button {
+    border-radius: 5px;
+    margin-bottom: 3%;
     font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
-    width: 400px;
     height: 50px;
 }
 
 .loginGoogle {
     background-color: rgb(38, 141, 201);
+    border: none;
     color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.logos img {
-    max-width: 100px;
-    max-height: 50px;
+.imagenGoogle {
+    width: 37px;
+    background-color: white;
+}
+
+.captura {
+    width:300px;
+}
+
+/* ======= Main ======= */
+
+/* --- Logos Section --- */
+.logos {
+    background-color: rgb(214, 190, 160);
+    color: black;
+    max-width: auto;
+    height: auto;
+    padding: auto;
+}
+
+.logos p {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 .logos-fila {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     padding-bottom: 20px;
 }
 
+.logos img {
+    max-width: 200px;
+    max-height: 50px;
+}
+
+/* --- Empresas Section --- */
 .empresas {
     background-color: white;
     color: black;
@@ -134,7 +160,7 @@ header {
 }
 
 .empresas h3 {
-    color: rgb(94, 9, 115);
+    color: #540B51;
     font-size: 35px;
     text-align: center;
 }
@@ -145,23 +171,24 @@ header {
 }
 
 .empresas span {
-    color:rgb(94, 9, 115);
+    color: #540B51;
     font-weight: bold;
     font-size: 50px;
 }
 
 .empresas ul {
-    list-style:none;
+    text-align: center;
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    
 }
 
-.empresas ul li{
+.empresas ul li {
     padding: 20px 20px;    
 }
 
+/* --- Welcome Section --- */
 .welcome {
     text-align: center;
     padding-bottom: 20px;
@@ -171,40 +198,45 @@ header {
     font-size: 30px;
 }
 
-.welcome button{
+.welcome button {
     width: 200px;
     height: 50px;
 }
 
 .button1 {
     background-color: white;
-    color:rgb(94, 9, 115);
+    color: #540B51;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .button2 {
-    background-color: rgb(94, 9, 115);
-    color:white;
+    background-color: #540B51;
+    color: white;
     border: 1px solid white;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
+/* ======= Footer ======= */
 footer {
     background-color: white;
     color: black;
     padding: 20px;
 }
 
-.blue {
-    color: rgb(0, 140, 255);
-}
-
-footer ul{
-    list-style:none;
+footer ul {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0;
     font-weight: bold;
+}
+
+
+.blue {
+    color: rgb(0, 140, 255);
 }
 
 .rrss {
@@ -216,4 +248,296 @@ footer ul{
 .rrss li {
     padding: 20px;
 }
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slacklogo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .menuBuscador img {
+        width: 35px;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .teamwork {
+        text-align: start;
+        max-width: 50%;
+    }
+
+    .captura {
+        width: 500px;
+    }
+
+    .empresas ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome button {
+        width: 600px;
+    }
+
+    footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+.menu {visibility: visible;}
+.botones {visibility: visible;}
+
+
+.menu a {
+    font-size: 20px;
+}
+
+body p {
+    font-size: 25px;
+}
+
+.teamwork h1 {
+    font-size: 80px;
+}
+
+.empresas h3 {
+    font-size: 50px;
+}
+.teamwork {
+    width: 40%;
+}
+
+.menu {
+    list-style: none;
+}
+.captura {
+    width: 550px;
+}
+
+.menu ul {
+    
+    list-style: none;
+    display: flex;
+}
+
+.menu a {
+    font-weight: bold;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.signIn {
+    background-color: transparent;
+    border: transparent;
+}
+
+.signIn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+} 
+
+.tryForFree a {
+    text-decoration: none;
+    color:#540B51;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.tryForFree {
+    background-color: white; 
+}
+   
+
+.botones button {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.botonEmail button {
+    width: 400px;
+    height: 50px;
+}
+
+.welcome button {
+    width: 200px;
+}
+
+.logos-fila {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.slacklogo {
+    width: 20%;
+    height: 20%;
+}
+
+}
+
+
+@media (width >= 1440px) {
+    .menu {visibility: visible;}
+    .botones {visibility: visible;}
+
+    .menu a {
+        font-size: 40px;
+    }
+
+    .slacklogo {
+        width: 20%;
+        height: 20%;
+    }
+    
+    body p {
+        font-size: 50px;
+    }
+    
+    .teamwork h1 {
+        font-size: 100px;
+    }
+    
+    .empresas h3 {
+        font-size: 70px;
+    }
+    .teamwork {
+        width: 40%;
+    }
+    
+    .menu {
+        list-style: none;
+    }
+
+    .menu ul {
+    
+        list-style: none;
+        display: flex;
+    }
+
+    .captura {
+        width: 800px;
+    }
+
+    .menu a {
+        font-weight: bold;
+        margin-right: 30px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .signIn {
+        background-color: transparent;
+        border: transparent;
+    }
+    
+    .signIn a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    } 
+    
+    .tryForFree a {
+        text-decoration: none;
+        color:#540B51;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    
+    .tryForFree {
+        background-color: white; 
+    }
+       
+    
+    .botones button {
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    .botonEmail button {
+        width: 400px;
+        height: 50px;
+    }
+    
+    .welcome button {
+        width: 200px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .botonEmail button {
+        font-size: 30px;
+        width: 600px;
+        height: 70px;
+    }
+
+    .logos-fila {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .logos img {
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .empresas ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .welcome h3 {
+        font-size: 60px;
+    }
+
+    .welcome button {
+        font-size: 25px;
+        font-weight: bold;
+        width: 400px;
+        height: 130px;
+    }
+
+    footer ul {
+        font-size: 30px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+}
+
+
+
+
 
